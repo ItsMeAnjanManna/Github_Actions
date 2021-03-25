@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Display Payload
-        run: echo "{{ github.event.client_payload.env }}"
+        run: echo "${{ github.event.client_payload.env }}"
       - name: Before Checkout
         run: |
           pwd
